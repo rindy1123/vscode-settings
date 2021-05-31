@@ -1,0 +1,73 @@
+{
+    "diffEditor.renderSideBySide": false, // Git の差分を行内に表示
+    "editor.colorDecorators": false, // カラーデコレーターを非表示
+    "editor.formatOnPaste": true, // ペースト時に自動でフォーマット
+    "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+    "editor.formatOnType": true, // 入力した行を自動でフォーマット
+    "editor.minimap.renderCharacters": false, // ミニマップの表示文字をブロックに変更
+    "editor.minimap.showSlider": "always", // 表示領域をミニマップで常にハイライト
+    "editor.multiCursorModifier": "ctrlCmd", // マウスでの複数選択時の修飾キーを変更
+    "editor.renderControlCharacters": true, // 制御文字を表示
+    "editor.renderLineHighlight": "all", // 選択行を行番号含めすべてハイライト
+    "editor.renderWhitespace": "all", // 半角スペースを常に表示
+    "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
+    "editor.tabSize": 2, // タブのサイズ変更
+    "editor.wordWrap": "on", // エディターの幅で折り返し
+    "explorer.confirmDelete": false, // ファイル削除時の確認を表示しない
+    "files.associations": { // ファイルと言語の関連付けを変更
+        ".*lintrc": "json",
+        "*.html": "html"
+    },
+    "files.exclude": {
+        "**/*.map": true
+    },
+    "files.insertFinalNewline": true, // ファイルの保存時に末尾を改行
+    "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+    "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
+    },
+    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
+    "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+    "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+    "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+    "search.exclude": { // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+        "**/tmp": true
+    },
+    "window.openFoldersInNewWindow": "on", // 新規ワークスペースを別ウインドウで開く
+    "window.title": "${activeEditorMedium}${separator}${rootName}", // ウインドウ上部に表示する文字列の設定
+    "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
+    "workbench.editor.tabSizing": "shrink", // タブの表示設定
+    "workbench.startupEditor": "none",
+    "files.autoGuessEncoding": true,
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.inheritEnv": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.formatOnPaste": true, // ペースト時に自動でフォーマット
+        "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+        "editor.formatOnType": true, // 入力した行を自動でフォーマット
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.formatOnPaste": true, // ペースト時に自動でフォーマット
+        "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+        "editor.formatOnType": true, // 入力した行を自動でフォーマット
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<esc>"]
+        }
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "eslint.run": "onSave",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.fontFamily": "Fira Mono for Powerline" // Welcome Page を表示しない
+
+}
